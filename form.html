@@ -1,1 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>table</title>
 
+	<style type="text/css">
+
+		.formStyle {border: 1px solid black; 
+					width: 200px;
+					padding: 50px;}
+
+	</style>
+</head>
+<body>
+
+<form action="form.php" method="POST">
+
+	<div class="formStyle">
+
+	  <label>Full name:</label><br>
+	  <input type="text" id="fullName" name="fullname"><br><br>
+	  <label>Age:</label><br>
+	  <input type="text" id="Age" name="age"><br><br>
+	  <label>Address:</label><br>
+	  <input type="Address" id="address" name="Address"><br><br>
+	  <label>Email:</label><br>
+	  <input type="email" id="email" name="Email"><br><br>
+	  <label>Password:</label><br>
+	  <input type="Password" id="passowrd" name="Password"><br><br>
+
+	  <label>Receive newsletter:</label><br>
+		<select name="newsletter" id="newsletter">
+			<option value="volvo">Yes</option>
+			<option value="saab">No</option>
+		</select>
+	  <button>Submit</button>
+</div>
+</form> 
+
+
+</body>
+</html>
