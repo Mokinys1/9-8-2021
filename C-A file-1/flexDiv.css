@@ -1,0 +1,13 @@
+*{margin:0; padding: 0;}
+.container {display: flex;
+	justify-content: center;
+	background-color: midnightblue;
+	height: 100px;
+	}
+
+.box{background-color: darkred;
+	width: 5em;
+	margin: 20px 20px;
+	text-align: center;
+	line-height: 60px;
+	color: white;}	
