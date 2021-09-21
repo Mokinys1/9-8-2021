@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="structure.css">
+</head>
+<body>
+<!-- Simulate a smartphone / tablet -->   
+<div class="mobile-container">
+	<!-- Top Navigation Menu -->
+	<div class="topnav">  
+	  <a href="#home" class="active"></a>
+	  <img src="assets/logo.jpg" class="pic">
+	  <div id="myLinks">
+	    <a href="#" class="hover">PORTFOLIO</a>
+	    <a href="#" class="hover">CLIENT GALLERY</a>
+	    <a href="#" class="hover">ABOUT</a>
+	    <a href="#" class="hover">CONTACT</a>
+		<a href="#" class="hover">BOOK NOW</a>
+		<div class="flexy">
+		    <a href="#" class="fab fa-facebook-f"></a>
+		    <a href="#" class="fab fa-instagram"></a>
+		    <a href="#" class="fas fa-share-alt"></a>
+		</div> 
+	  </div>
+	  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+	    <i class="fa fa-bars"></i>
+	  </a>
+	</div>
+</div>
+
+<!--tablet and desktop-->
+<nav class="navbar navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="#"> 
+       <img src="assets/logo.jpg" class="logoT">
+    	<a href="#">PORTFOLIO</a>
+	    <a href="#">CLIENT GALLERY</a>
+	    <a href="#">ABOUT</a>
+	    <a href="#">CONTACT</a>
+		
+		<div class="flexy">
+		    <a href="#" class="fab fa-facebook-f"></a>
+		    <a href="#" class="fab fa-instagram"></a>
+		    <a href="#" class="fas fa-share-alt"></a>
+		</div> 
+		<button>BOOK NOW</button>
+  
+    </a>
+  </div>
+</nav>
+
+ <div class="pics">
+    <img src="assets/img1.jpg" alt="image">
+    <img src="assets/img2.jpg" alt="image">
+    <img src="assets/img3.jpg" alt="image">
+    <img src="assets/img4.jpg" alt="image">
+    <img src="assets/img5.jpg" alt="image">
+    <img src="assets/img6.jpg" alt="image">
+    <img src="assets/img7.jpg" alt="image">
+    <img src="assets/img8.jpg" alt="image">
+    <img src="assets/img9.jpg" alt="image">
+    <img src="assets/img10.jpg" alt="image">
+  </div>
+<!-- End smartphone / tablet look -->
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+</body>
+</html>
