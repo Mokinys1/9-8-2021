@@ -1,7 +1,7 @@
-* {
+/* {
   margin: 0;
   padding: 0;
-}
+}*/
 
 .orange {
   background-color: orange;
@@ -34,16 +34,23 @@
   margin-bottom: 2px;
   padding: 20px;
 }
-
+/*tablet menu*/
 @media screen and (min-width: 768px) {
-  .container {display: grid;}
+  .container {
+    display: grid;
+  }
 
-  .orange {padding: 20px;}
+  .orange {
+    padding: 20px;
+  }
 
+  .blue {
+    padding: 50px;
+  }
 
-  .blue{ padding: 50px;}
-
-  .green {padding: 172px;}
+  .green {
+    padding: 172px;
+  }
 
   .grey {
     display: none;
@@ -64,39 +71,42 @@
     padding: 30px;
   }
 }
+/*desktop menu*/
 @media screen and (min-width: 1024px) {
-
   .container {
     display: grid;
   }
-  .orange { padding:110px;}
+
+  .orange {
+    padding: 40px;
+  }
+  .mr-1{margin-right: 4px;}
+
   .orange2 {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 80px;
-    column-gap: 10px;
     row-gap: 15px;
   }
 
   .green {
-    margin-top: 4%;
-    padding: 1200px 0px;
+    margin-top: 5px;
+    padding: 170px 0px;
   }
 
   .blue {
-    padding: 300px;
+    padding: 50px;
   }
 
   .greyGrid {
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-template-rows: 80px;
-    column-gap: 20px;
     row-gap: 15px;
     padding-top: 10px;
   }
 
   .grey2 {
-    padding: 500px;
+    padding: 100px;
   }
 }
