@@ -1,26 +1,24 @@
-/* {
+body {
   margin: 0;
   padding: 0;
-}*/
+}
 
 .orange {
   background-color: orange;
   margin-bottom: 2px;
-  padding: 15px;
+  padding: 20px;
 }
 
 .green {
   background-color: green;
-  margin-top: 2px;
   margin-bottom: 2px;
   padding: 120px;
 }
 
 .blue {
   background-color: blue;
-  margin-top: 2px;
   margin-bottom: 2px;
-  padding: 55px;
+  padding: 50px;
 }
 
 .grey2 {
@@ -28,30 +26,12 @@
 }
 
 .grey {
-  display: grid;
   background-color: lightgrey;
-  margin-top: 2px;
-  margin-bottom: 2px;
   padding: 20px;
 }
+
 /*tablet menu*/
 @media screen and (min-width: 768px) {
-  .container {
-    display: grid;
-  }
-
-  .orange {
-    padding: 20px;
-  }
-
-  .blue {
-    padding: 50px;
-  }
-
-  .green {
-    padding: 172px;
-  }
-
   .grey {
     display: none;
   }
@@ -59,10 +39,8 @@
   .greyGrid {
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-rows: 80px;
     column-gap: 10px;
     row-gap: 10px;
-    padding-top: 2px;
   }
 
   .grey2 {
@@ -73,29 +51,22 @@
 }
 /*desktop menu*/
 @media screen and (min-width: 1024px) {
-  .container {
-    display: grid;
-  }
-
   .orange {
     padding: 40px;
   }
-  .mr-1{margin-right: 4px;}
 
   .orange2 {
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 80px;
-    row-gap: 15px;
+    grid-template-columns: auto auto;
+    column-gap: 10px;
   }
 
-  .green {
-    margin-top: 5px;
-    padding: 170px 0px;
-  }
-
-  .blue {
-    padding: 50px;
+  .blueGrid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 187px;
+    column-gap: 10px;
+    padding-top: 10px;
   }
 
   .greyGrid {
