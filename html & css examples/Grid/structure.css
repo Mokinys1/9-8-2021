@@ -21,7 +21,7 @@ body {
   padding: 50px;
 }
 
-.grey2 {
+.grey4 {
   display: none;
 }
 
@@ -43,7 +43,7 @@ body {
     row-gap: 10px;
   }
 
-  .grey2 {
+  .grey4 {
     display: grid;
     background-color: lightgrey;
     padding: 30px;
@@ -58,7 +58,7 @@ body {
   .green {
     padding: 200px;}
 
-  .orange2 {
+  .orangeGrid {
     display: grid;
     grid-template-columns: auto auto;
     column-gap: 10px;
@@ -80,7 +80,7 @@ body {
     padding-top: 10px;
   }
 
-  .grey2 {
+  .grey4 {
     padding: 100px;
   }
 }
