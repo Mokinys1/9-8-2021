@@ -1,71 +1,95 @@
 @import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Oldenburg&display=swap');
 
-.dropdown-menu[data-bs-popper] {
-    top: 100%;
-    left: 25%;
-    margin-top: 0.125rem;}
+body {
+  font-family: "Oldenburg", cursive;
+  font-size: 1rem/1.5 var(--bs-font-sans-serif);
+}
 
-//     .navbar > .container-fluid {
-//     display: flex;
-//     flex-wrap: wrap;
-//     justify-content: center;
-//     flex-direction: column;
-// }
+a {
+  font-family: Times New Roman;
+  color: var(--bs-blue);
+}
 
-    .navbar-nav {
-    display: flex;
-    flex-direction: column;
-    padding-left: 0;
-    margin-top: 20px;
-    margin-bottom: 0;
-    list-style: none;
-    align-content: center;
-    justify-content: center;
-    text-align: center;
-    flex-wrap: nowrap;
+.addFont {
+    font-family: "Oldenburg", cursive;
+}
+
+@media (min-width: 1200px) {
+  .row-cols-md-3 > * {
+    flex: 0 0 auto;
+    width: 24.333333%;
+  }
+}
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    display: contents !important;
+    flex-basis: auto;
+  }
+
+  .navDeskNoShow {
+    display: none;
+  }
+
+  .mobileLogo {
+    display: none;
+  }
+}
+.navbar > .container-fluid {
+  justify-content: center;
+}
+
+.navbar-brand {
+  padding-top: 1.3125rem;
+}
+
+@media (max-width: 992px) {
+  .navBig {
+    display: none;
+  }
+
+  .navbar > .container-fluid {
+    justify-content: end;
+  }
+
+  .navDeskNoShow {
+    display: block;
+  }
+}
+.imgClass {
+  width: 100%;
+  height: 225px;
+  object-fit: cover;
+}
+
+.d-flex {
+  align-items: center;
+}
+
+.btn-danger {
+  color: #fff;
+  background-color: #112355;
+  border-color: #112355;
+}
+
+.nav-link {
+  font-size: 1.1rem;
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #112355;
+}
+
+.btn-light {
+  color: #000;
+  background-color: #f8f9fa;
+  border-color: #112355;
+}
+
+.mobileLogo {
+  margin-right: auto;
 }
 
 .navbar-nav .dropdown-menu {
     position: absolute;
-}
-
-     .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-
-@media (min-width: 1200px){
-.row-cols-md-3 > * {
-    flex: 0 0 auto;
-    width: 24.333333%;
-}
-}
-
-
-.b-example-divider {
-  height: 3rem;
-  background-color: rgba(0, 0, 0, .1);
-  border: solid rgba(0, 0, 0, .15);
-  border-width: 1px 0;
-  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-}
-
-.bi {
-  vertical-align: -.125em;
-  fill: currentColor;
-}
-
-@media (min-width: 992px){
-.navbar-expand-lg .navbar-collapse {
-    display: contents !important;
-    flex-basis: auto;}
+    width: 100%;
 }
