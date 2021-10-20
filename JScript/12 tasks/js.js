@@ -104,7 +104,6 @@ function calculateValue(num1, num2, action) {
   }
 }
 console.log(calculateValue("a", 4, "addition"));
-console.log(calculateValue(2, 4, "uknown"));
 console.log(calculateValue(2, 4, "addition"));
 console.log(calculateValue(2, 4, "subtraction"));
 console.log(calculateValue(2, 4, "multiplication"));
