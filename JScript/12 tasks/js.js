@@ -70,7 +70,7 @@ let citiesOfLithuania = [
   'Utena',
 ];
 let filteredByLetter = (arr, letter) => arr.filter(x => x.includes(letter));
-console.log(filteredByLetter(citiesOfLithuania, "y")); 
+console.log(filteredByLetter(citiesOfLithuania, "Š")); 
 
 // 12. Parašykite penkias funkcijas:
 // - calculateValue()
