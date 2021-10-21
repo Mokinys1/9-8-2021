@@ -30,3 +30,6 @@ console.log(lastInput);
 
 let lastInput2 = document.querySelector('form table input:last-child');
 console.log(lastInput2);
+
+let lastInput3 = document.querySelectorAll('form table input');
+console.log(lastInput3[lastInput3.length - 1]);
