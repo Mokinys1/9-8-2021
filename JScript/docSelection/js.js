@@ -19,12 +19,14 @@ console.log(ageTable);
 
 console.log(document.querySelector('#age'));
 
-console.log(document.querySelectorAll('label'));
+console.log(document.querySelectorAll('form table label'));
 
 let obj = document.querySelector('input');
 console.log(obj);
 
 
-let lastInput = document.querySelector('input:last-of-type');
-console.log(lastInput);
+// let lastInput = document.querySelector('input:last-of-type');
+// console.log(lastInput);
 
+let lastInput2 = document.querySelector('input:last-child');
+console.log(lastInput2);
