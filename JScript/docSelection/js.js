@@ -19,7 +19,7 @@ console.log(ageTable);
 
 console.log(document.querySelector('#age'));
 
-console.log(document.querySelectorAll('label'));
+console.log(document.querySelectorAll('form table label'));
 
 let obj = document.querySelector('input');
 console.log(obj);
