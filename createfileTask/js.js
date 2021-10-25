@@ -27,7 +27,7 @@ document.body.appendChild(cP);
     let ul=document.createElement('ul');
     for(i=0;i<5;i++)
     {
-        var li=document.createElement('li');
+        let li=document.createElement('li');
         li.innerHTML=`<img src='logo.jpg'>`;
         ul.appendChild(li);
     }
