@@ -28,7 +28,9 @@ document.body.appendChild(cP);
     for(i=0;i<5;i++)
     {
         let li=document.createElement('li');
-        li.innerHTML=`<img src='logo.jpg'>`;
+        li.innerHTML=`<a href="https://www.qries.com/">
+        <img alt="Qries" src="https://www.qries.com/images/banner_logo.png"
+        width="150" height="70">`;
         ul.appendChild(li);
     }
     document.getElementById('main').appendChild(ul);
