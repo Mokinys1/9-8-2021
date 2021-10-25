@@ -33,7 +33,7 @@ document.body.appendChild(cP);
         width="150" height="70">`;
         ul.appendChild(li);
     }
-    document.getElementById('main').appendChild(ul);
+    document.querySelector('#main').appendChild(ul);
 
 // <p> tag’as su tekstu.
 let cP2 = document.createElement('p');
