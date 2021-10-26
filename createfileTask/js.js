@@ -30,7 +30,7 @@ document.body.appendChild(cP);
         let li=document.createElement('li');
         li.innerHTML=`<a href="https://www.qries.com/">
         <img alt="Qries" src="https://www.qries.com/images/banner_logo.png"
-        width="150" height="70">`;
+        width="150" height="70"></a>`;
         ul.appendChild(li);
     }
     document.querySelector('#main').appendChild(ul);
