@@ -1,0 +1,2 @@
+2021/11/25 16:37:20 [error] 32#32: *1 directory index of "/home/code-academy/PHP/" is forbidden, client: 172.21.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:8081"
+2021/11/25 19:09:02 [error] 31#31: *1 directory index of "/home/code-academy/PHP/" is forbidden, client: 172.22.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:8081"
