@@ -4,14 +4,10 @@
 
 $hello = 'hello';
 
-var_dump($hello[0]);
-var_dump($hello[1]);
-var_dump($hello[4]);
+
+echo "\"$hello[0]\",
+ \"$hello[1]\", 
+ \"$hello[4]\"";
+?>
 
 
-
-
-
-
-
- ?>
