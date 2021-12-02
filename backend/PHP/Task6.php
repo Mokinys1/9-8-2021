@@ -16,7 +16,6 @@ $lang = array(
 $lang = array(
   'english',
   'lithuanian',
-
 );
 
 
