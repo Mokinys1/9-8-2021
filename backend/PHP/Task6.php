@@ -7,8 +7,6 @@
 <?php
 
 
-
-
 $locales = array(
   'en_EN',
   'lt-LT',
@@ -18,27 +16,31 @@ $locales = array(
 $locales = array(
   'english',
   'lithuanian',
-  // etc...
+
 );
 
+
 $oldLocale = setlocale( LC_TIME, '0' );
-y
+
+
 $localizedWeekdays = array();
+
 
 foreach( $locales as $locale )
 {
-
+     
     $localizedWeekdays[ $locale ] = array();
 
-    // 7 days in a week
+    
     for( $i = 0; $i < 7; $i++ )
     {
-
+        
         setlocale( LC_TIME, $locale );
 
-  
+        
         $localizedWeekdays[ $locale ][] = strftime( '%A', strtotime( 'next Monday +' . $i . ' days' ) );
 
+        
         setlocale( LC_TIME, $oldLocale );
     }
 }
