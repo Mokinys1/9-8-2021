@@ -7,13 +7,13 @@
 <?php
 
 
-$locales = array(
+$lang = array(
   'en_EN',
   'lt-LT',
 );
 
 
-$locales = array(
+$lang = array(
   'english',
   'lithuanian',
 
@@ -26,7 +26,7 @@ $oldLocale = setlocale( LC_TIME, '0' );
 $localizedWeekdays = array();
 
 
-foreach( $locales as $locale )
+foreach( $lang as $locale )
 {
      
     $localizedWeekdays[ $locale ] = array();
