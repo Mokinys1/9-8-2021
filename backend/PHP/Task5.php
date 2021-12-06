@@ -39,17 +39,14 @@ var_dump($books);
 
 // Išvesti visų visų knygų metų vidurkį;
 
-function getAverageYear($arr) {
+function getAverage(array $data, string $columnName) {
 
-    $yearsCollection = [];
+    $yearsCollection = array_column($data, 'year');
+    
+    return array_sum($yearsCollection) / count($yearsCollection);
 
-    foreach ($arr as $year) {
-        $yearsCollection[] = $year[2];
-    }
-
-    $result = array_sum($yearsCollection)/count($yearsCollection);
-
-    echo "The average year of the books is $result: ";
 }
 
-getAverageYear($books);
+    $result = getAverageYear($books, 'year');
+
+    echo "The average year of the books is $result: ";

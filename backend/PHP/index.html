@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style type="text/css">
+		form {border: solid 1px black;}
+		li {padding: 5px;
+			list-style-type: none;}
+		input {margin: 10px;}
+	</style>
+</head>
+<body>
+	<h1>Registracija į kursus</h1>
+	<hr>
+
+	<form action="app.php?filtered=true" method="POST">
+		<ul>
+			<li>
+				<label>Vardas</label>
+				<input type="text" value="" name="name">
+			</li>
+			<li>
+				<label>Pavardė</label>
+				<input type="text" value="" name="name">
+			</li>
+		
+			<li>Miestai
+				<select name="cities" id="">
+				    <option value="Kaunas">Kaunas</option>
+				    <option value="Vilnius">Vilnius</option>
+				    <option value="Klaipėda">Klaipėda</option>
+				    <option value="Alytus">Alytus</option>
+				    <option value="Šiauliai">Šiauliai</option>
+				</select>
+			</li>
+			<li>
+				<label for="programingLanguage">C++</label>
+				<input type="radio" id="newsletter" name="programingLanguage" value="0">
+			</li>
+			<li>
+				<label for="programingLanguage">PHP</label>
+				<input type="radio" id="programingLanguage" name="programingLanguage" value="1">
+			</li>
+				<li>
+				<label for="programingLanguage">Python</label>
+				<input type="radio" id="programingLanguage" name="programingLanguage" value="1">
+			</li>
+			<li>
+				<textarea cols="30" rows="10">
+					Pvz : text text text
+				</textarea>
+			</li>
+		
+			<li>
+				<button type="submit">Siūsti</button>
+			</li>
+			
+		</ul>
+	</form>
+</body>
+</html>
