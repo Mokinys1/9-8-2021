@@ -5,10 +5,20 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<style type="text/css">
-		form {border: solid 1px black;}
-		li {padding: 5px;
-			list-style-type: none;}
-		input {margin: 10px;}
+
+		form{
+			width: 20%; border: 1px solid;
+		}
+		li{			
+			list-style-type: none;
+		}
+		input{
+			margin-bottom: 10px;
+		}
+		select{
+			margin-bottom: 10px;
+		}
+
 	</style>
 </head>
 <body>
@@ -19,33 +29,34 @@
 		<ul>
 			<li>
 				<label>Vardas</label>
-				<input type="text" value="" name="name">
+				<input type="text" name="name">
 			</li>
 			<li>
 				<label>Pavardė</label>
-				<input type="text" value="" name="name">
-			</li>
-		
-			<li>Miestai
-				<select name="cities" id="">
+				<input type="text" name="surename">
+			</li>	
+			<li>
+				<label>Miestai</label>
+				<select name="cities" id="cities">
 				    <option value="Kaunas">Kaunas</option>
 				    <option value="Vilnius">Vilnius</option>
 				    <option value="Klaipėda">Klaipėda</option>
 				    <option value="Alytus">Alytus</option>
 				    <option value="Šiauliai">Šiauliai</option>
 				</select>
+				<br>
 			</li>
 			<li>
 				<label for="programingLanguage">C++</label>
-				<input type="radio" id="newsletter" name="programingLanguage" value="0">
+				<input type="checkbox" id="progLang" name="programingLanguage">
 			</li>
 			<li>
 				<label for="programingLanguage">PHP</label>
-				<input type="radio" id="programingLanguage" name="programingLanguage" value="1">
+				<input type="checkbox" id="progLang" name="programingLanguage">
 			</li>
 				<li>
 				<label for="programingLanguage">Python</label>
-				<input type="radio" id="programingLanguage" name="programingLanguage" value="1">
+				<input type="checkbox" id="progLang" name="programingLanguage">
 			</li>
 			<li>
 				<textarea cols="30" rows="10">
@@ -55,8 +66,7 @@
 		
 			<li>
 				<button type="submit">Siūsti</button>
-			</li>
-			
+			</li>			
 		</ul>
 	</form>
 </body>
