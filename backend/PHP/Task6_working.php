@@ -1,16 +1,6 @@
 <?php
-
-$days = [
-    $lt = [
-        'Pirmadienis',
-        'Antradienis',
-        'Trečiadienis',
-        'Ketvirtadienis',
-        'Penktadienis',
-        'Sestadienis',
-        'Sekmadienis'
-    ],
-    $en = [
+$names = [
+    'en' => [
         'Monday',
         'Tuesday',
         'Wednesday',
@@ -18,23 +8,36 @@ $days = [
         'Friday',
         'Saturday',
         'Sunday'
+    ],
+    'lt' => [
+        'Pirmadienis', 
+        'Antradienis', 
+        'Trečiadienis', 
+        'Ketvirtadienis', 
+        'Penktadienis', 
+        'Šeštadienis',
+        'Sekmadienis'
     ]
-    ];
+];
 
-var_dump($days[0][0], $days[1][2]);
+function getLangName($names) {
+    $langs = array_keys($names);
 
-$language = 'lt';
+    return $langs[array_rand($langs)];
+}
 
-function weekToday($language, $arr) {
-    $today = date('l');
-    if($language == 'en') {
-        echo "Today is $today";
-    } elseif($language == 'lt') {
-        $todaysKey = array_search($today, $arr[1]);
-        echo 'Today is ' . $arr[0][$todaysKey];
-    } else {
-        echo 'Sorry, language uknown';
-    }
-  };
+function getDay() {
+    return rand(0,6);
+}
 
-  weekToday($language, $days);
+$rand = FALSE;
+
+if ($rand) {
+    $lang = getLangName($names);
+    $day = getDay();
+} else {
+    $lang = 'lt';
+    $day = date('N') - 1;
+}
+
+echo $names[$lang][$day];
