@@ -59,7 +59,9 @@ if (isset($_FILES['file'])) {
 		body{
 			font-family:'DM Sans',sans-serif;
 		}
-		p{font-style: italic;}
+		p{
+			font-style:italic;
+		}
 		
 		h3{
 			margin-right:5%;
@@ -74,11 +76,17 @@ if (isset($_FILES['file'])) {
 
 		<img src="<?php echo $profilePicture;?>">
 
-		<h1><?php echo $_POST['name']?></h1>
+		<h1>
+			<?php echo $_POST['name']?>
+		</h1>
 
-		<h1><?php echo $_POST['surename']?></h1>
+		<h1>
+			<?php echo $_POST['surename']?>
+		</h1>
 		
-		<h2><?php echo $_POST['cities']?></h1>
+		<h2>
+			<?php echo $_POST['cities']?>
+		</h2>
 
 			<!--skill checkbox-->
 			<?php $checkbox = $_POST['lang'];
@@ -86,7 +94,10 @@ if (isset($_FILES['file'])) {
 				if ($skill){
 					echo"<h3>$skill<h3>";
 				}
-			} ?>
-		<p><?php echo $_POST['info']?></p>
+			}
+			?>
+		<p>
+			<?php echo $_POST['info']?>
+		</p>
 </body>
 </html>
