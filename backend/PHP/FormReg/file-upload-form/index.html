@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<style type="text/css">
+		.extra{font-style: italic;}
 		li{	width: 100px;
 			padding: 4px;
 			list-style-type: none;
@@ -64,9 +65,9 @@
 				<input type="checkbox" id="Python" name="lang[]" value="Python">
 			</li>
 			<li>
-			  	<input type="checkbox" id="other" name="interest" value="other">
+			  	<input type="checkbox" id="other" name="lang[]" value="Other skills:">
      			<label for="other">Other</label>
-      			<input type="text" id="otherValue" name="other">
+      			<input type="text" id="otherValue" name="lang[]">
 			</li>
 			<li>
 				<h4 for="moretext" class="extra">Send us a message</h4>
@@ -78,18 +79,18 @@
 			</li>			
 		</ul>
 	</form>
+
 <script type="text/javascript">
-
-	let otherCheckbox = document.querySelector('input[value="other"]');
+	let otherCheckbox = document.querySelector('input[value="Other skills:"]');
 	let otherText = document.querySelector('input[id="otherValue"]');
-	otherText.style.visibility = 'hidden';
+	otherText.style.visibility='hidden';
 
-	otherCheckbox.addEventListener('change', () => {
+	otherCheckbox.addEventListener('change',()=>{
  	 	if(otherCheckbox.checked) {
-  		  	otherText.style.visibility = 'visible';
-   		  	otherText.value = '';
-  		} else {
-    	 	 otherText.style.visibility = 'hidden';
+  		  	otherText.style.visibility='visible';
+   		  	otherText.value='';
+  		}else{
+    	 	otherText.style.visibility='hidden';
   }
 });
 	

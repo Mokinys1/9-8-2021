@@ -59,10 +59,13 @@ if (isset($_FILES['file'])) {
 		body{
 			font-family:'DM Sans',sans-serif;
 		}
+		h3{
+			font-family:monospace;
+			color:red;
+		}
 		p{
 			font-style:italic;
-		}
-		
+		}		
 		h3{
 			margin-right:5%;
 			display:inline;
