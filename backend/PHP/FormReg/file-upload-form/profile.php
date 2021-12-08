@@ -83,7 +83,11 @@ if (isset($_FILES['file'])) {
 		<h1>
 			<?php echo $_POST['surename']?>
 		</h1>
-		
+
+		<h1>
+			<?php echo $_POST['email']?>
+		</h1>
+
 		<h2>
 			<?php echo $_POST['cities']?>
 		</h2>

@@ -23,12 +23,16 @@
 		<ul>
 			<li>
 				<label>Vardas</label>
-				<input type="text" name="name">
+				<input type="text" name="name" required>
 			</li>
 			<li>
 				<label>Pavardė</label>
-				<input type="text" name="surename">
+				<input type="text" name="surename" required>
 			</li>	
+			<li>
+				<label>Email</label>
+				<input type="text" name="email" required>
+			</li>
 		
 			<li>	
 				<label>Nuotrauka</label>
@@ -36,7 +40,7 @@
 			</li>
 			<li>
 				<label>Miestai</label>
-				<select id="cities" name="cities" >
+				<select id="cities" name="cities">
 				    <option value="Kaunas">Kaunas</option>
 				    <option value="Vilnius">Vilnius</option>
 				    <option value="Klaipėda">Klaipėda</option>
