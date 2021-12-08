@@ -96,7 +96,6 @@ if (isset($_FILES['file'])) {
 		<h2>
 			<?php echo $_POST['cities']?>
 		</h2>
-
 			<!--skill checkbox-->
 			<?php $checkbox = $_POST['lang'];
 			foreach ($checkbox as $skill){
@@ -105,8 +104,8 @@ if (isset($_FILES['file'])) {
 				}
 			}
 			?>
-		<p>
+		<h1>
 			<?php echo $_POST['info']?>
-		</p>
+		</h1>
 </body>
 </html>
