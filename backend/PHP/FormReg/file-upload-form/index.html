@@ -5,9 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<style type="text/css">
-	
 		li{	width: 100px;
-			padding: 5px;
+			padding: 4px;
 			list-style-type: none;
 		}
 		select{
@@ -65,14 +64,35 @@
 				<input type="checkbox" id="Python" name="lang[]" value="Python">
 			</li>
 			<li>
-				<textarea cols="30" rows="10" placeholder="Pvz : text text text" name="info">
+			  	<input type="checkbox" id="other" name="interest" value="other">
+     			<label for="other">Other</label>
+      			<input type="text" id="otherValue" name="other">
+			</li>
+			<li>
+				<h4 for="moretext" class="extra">Send us a message</h4>
+				<textarea cols="30" rows="10" name="info">
 				</textarea>
 			</li>
-		
 			<li>
 				<button type="submit">Siūsti</button>
 			</li>			
 		</ul>
 	</form>
+<script type="text/javascript">
+
+	let otherCheckbox = document.querySelector('input[value="other"]');
+	let otherText = document.querySelector('input[id="otherValue"]');
+	otherText.style.visibility = 'hidden';
+
+	otherCheckbox.addEventListener('change', () => {
+ 	 	if(otherCheckbox.checked) {
+  		  	otherText.style.visibility = 'visible';
+   		  	otherText.value = '';
+  		} else {
+    	 	 otherText.style.visibility = 'hidden';
+  }
+});
+	
+</script>
 </body>
 </html>
